@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thả Thính</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 2px solid #ff4081;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .yes {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .no {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Cho a Thai triệu cớm được hong? 🥺</h2>
+        <button class="yes" onclick="showMessage('Anh yêu em')">Có ❤️</button>
+        <button class="no" onclick="showMessage('Dỗi 😤')">Không 😒</button>
+        <h3 id="message"></h3>
+    </div>
+
+    <script>
+        function showMessage(text) {
+            document.getElementById('message').innerText = text;
+        }
+    </script>
+</body>
+</html>
